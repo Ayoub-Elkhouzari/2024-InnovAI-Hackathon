@@ -38,29 +38,29 @@ pip install -r requirements.txt
 Launch the APIs necessary for the application:
 
 - LLM Chatbot API (Language Model):
-```bash`
+```bash```
 python APIs/LLM_API.py
 
 - Random Forest API for 8 Features (Patient Predictions):
-```bash`
+```bash```
 python APIs/RF_8F_API.py
 
 - Random Forest API for 40 Features (Doctor Predictions):
-```bash`
+```bash```
 python APIs/RF_40F_API.py
 
 ** 3. Set Up the Front-End Application **
 Install Node.js to enable running the Next.js application. Follow the official installation guide at Node.js Installation Guide.
 
 - Navigate to the /APP folder:
-```bash`
+```bash```
 cd APP
 
 - Install front-end dependencies:
-```bash`
+```bash```
 npm install
 
 - Start the development server::
-```bash`
+```bash```
 npm run dev
 
