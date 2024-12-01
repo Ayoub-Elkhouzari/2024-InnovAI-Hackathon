@@ -1,18 +1,67 @@
-## Abstract : Early Prediction of Sepsis
+# **Early Prediction of Sepsis**
 
-### Background and Problem Statement
-Sepsis is a severe medical condition characterized by the body's dysregulated response to infection, leading to organ failure and high mortality rates worldwide. Early identification and intervention are critical for reducing the morbidity and mortality associated with sepsis, yet current diagnostic methods often fail to detect the condition at its earliest stages. This project aims to develop a machine learning-based predictive model for the early detection of sepsis using electronic health records (EHR) and real-time physiological data. By leveraging advanced algorithms to analyze trends and patterns in patient data, the proposed model seeks to provide clinicians with actionable insights for timely intervention. This solution has the potential to transform sepsis management, reduce patient mortality, and improve resource allocation in healthcare systems.
+## **Background and Problem Statement**
+Sepsis, a life-threatening medical condition caused by the body’s dysregulated response to infection, is a leading cause of morbidity and mortality worldwide. Timely identification and intervention are essential for improving survival rates and mitigating organ damage. However, current diagnostic methods often fall short in detecting sepsis during its early and more treatable stages.
 
-### Impact and Proposed Solution
-Our solution is designed to empower individuals by enabling early prediction of sepsis, helping patients understand their risk and take proactive measures before the condition becomes critical. By leveraging advanced machine learning models that analyze key health indicators and risk factors, this solution provides an accessible and reliable tool for identifying the likelihood of sepsis. This capability allows patients to seek timely medical advice, monitor their health more closely, and make necessary lifestyle or medical adjustments to prevent disease progression.
+This project addresses these challenges by developing a machine learning-based predictive model for early sepsis detection. Using electronic health records (EHR) and real-time physiological data, the model leverages advanced algorithms to analyze patient data for patterns and trends indicative of sepsis. This approach provides clinicians with actionable insights, enabling timely interventions that improve patient outcomes, reduce mortality rates, and optimize healthcare resource allocation.
 
-The ability to predict sepsis early not only enhances individual health outcomes but also significantly reduces the strain on healthcare systems. For patients, it translates to improved quality of life and a better chance of avoiding severe complications. For healthcare providers, early warnings facilitate preventive care, reduce emergency interventions, and optimize resource allocation. By focusing on accessibility and proactive health management, this solution has the potential to save lives, lower healthcare costs, and contribute to a more informed and health-conscious society.
+---
 
-### Project Outcomes and Deliverables
-Improved Patient Awareness: Patients can understand their sepsis risk early, enabling proactive steps to mitigate it.
-Reduced Mortality Rates: Timely interventions based on early predictions lead to better survival rates.
-Enhanced Clinical Decision-Making: Healthcare providers can use predictive insights to prioritize care and allocate resources effectively.
-Cost Reduction: Lower treatment costs due to early intervention and reduced ICU admissions.
+## **Impact and Proposed Solution**
+Our solution proactively identifies individuals at risk of sepsis by analyzing key health indicators and risk factors using advanced machine learning models. By offering early prediction capabilities, this system empowers patients to seek timely medical advice and make informed decisions, potentially averting critical complications.
 
-### Instruction
-### 
+The societal impact of this solution is profound, with the potential to:
+- Save lives by preventing severe complications and mortality.
+- Reduce treatment costs through early intervention and decreased ICU admissions.
+- Enable efficient resource utilization in healthcare facilities.
+- Foster a culture of proactive health management and awareness.
+
+---
+
+## **Project Outcomes and Deliverables**
+
+1. **Enhanced Patient Awareness**: Provide patients with an early understanding of their sepsis risk, enabling them to take proactive measures to mitigate it.
+2. **Reduced Mortality Rates**: Facilitate timely interventions based on early warnings, significantly improving survival rates.
+3. **Improved Clinical Decision-Making**: Deliver predictive insights that empower healthcare providers to allocate resources effectively and prioritize patient care.
+4. **Cost Efficiency**: Lower overall treatment expenses due to reduced ICU admissions and a shift toward preventive care.
+
+---
+
+## **Instruction Guide**
+
+### **1. Install Required Libraries**
+Navigate to the project’s root directory and execute the following command to install dependencies:
+```bash
+pip install -r requirements.txt
+```
+### **2. Run APIs**
+Launch the APIs necessary for the application:
+
+- LLM Chatbot API (Language Model):
+```bash
+python APIs/LLM_API.py
+```
+- Random Forest API for 8 Features (Patient Predictions):
+```bash
+python APIs/RF_8F_API.py
+```
+- Random Forest API for 40 Features (Doctor Predictions):
+```bash
+python APIs/RF_40F_API.py
+```
+** 3. Set Up the Front-End Application **
+Install Node.js to enable running the Next.js application. Follow the official installation guide at Node.js Installation Guide.
+
+- Navigate to the /APP folder:
+```bash
+cd APP
+```
+- Install front-end dependencies:
+```bash
+npm install
+```
+- Start the development server::
+```bash
+npm run dev
+```
+#### Once the development server is running, the application can be accessed via the specified localhost URL.
