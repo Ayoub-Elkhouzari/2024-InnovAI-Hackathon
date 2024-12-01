@@ -31,5 +31,33 @@ The societal impact of this solution is profound, with the potential to:
 
 ### **1. Install Required Libraries**
 Navigate to the project’s root directory and execute the following command to install dependencies:
-```bash
+
 pip install -r requirements.txt
+
+ Run APIs
+Launch the APIs necessary for the application:
+
+LLM Chatbot API (Language Model):
+
+python APIs/LLM_API.py
+Random Forest API for 8 Features (Patient Predictions):
+
+python APIs/RF_8F_API.py
+Random Forest API for 40 Features (Doctor Predictions):
+
+python APIs/RF_40F_API.py
+3. Set Up the Front-End Application
+Install Node.js to enable running the Next.js application. Follow the official installation guide at Node.js Installation Guide.
+
+Navigate to the /APP folder:
+
+cd APP
+Install front-end dependencies:
+
+npm install
+Start the development server:
+
+
+npm run dev
+
+By following these steps, you can seamlessly run the system for early sepsis prediction.
