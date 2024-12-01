@@ -64,3 +64,4 @@ npm install
 ```bash
 npm run dev
 ```
+#### Once the development server is running, the application can be accessed via the specified localhost URL.
